@@ -514,15 +514,19 @@ section {
   padding-bottom: 30px;
 }
 .services .icon-box {
+  height: 300px;
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background-image: url("../img/forest-bg.jpg");
+  background-color: #fff;
+  background-size: cover;
   box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
+  transition: height 2s;
   border-radius: 8px;
   z-index: 1;
   text-align: center;
+  width:100%;
 }
 .services .icon-box::before {
   content: "";
@@ -530,14 +534,14 @@ section {
   background: #fdeff2;
   right: 0;
   left: 0;
-  bottom: 0;
-  top: 100%;
+  bottom: 100%;
+  top: 0;
   transition: all 0.4s;
   z-index: -1;
 }
 .services .icon-box:hover::before {
   background: rgba(112, 184, 121, 0.9);
-  top: 0;
+  bottom: 0;
   border-radius: 0px;
 }
 .services .icon {
@@ -546,27 +550,32 @@ section {
 .services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: rgba(112, 184, 121, 0.9);
+  color: #fff;
   transition: all 0.3s ease-in-out;
 }
 .services .title {
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 32px;
 }
 .services .title a {
-  color: #111;
+  color: #fff;
 }
 .services .description {
+  display: None;
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  transition: all 0.6s;
+}
+.services .icon-box:hover {
+  height: auto;
 }
 .services .icon-box:hover .title a, .services .icon-box:hover .description {
+  display: block;
   color: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -791,7 +800,6 @@ section {
   border: 2px solid #f9f9f9;
 }
 .pricing .box h3 {
-  font-weight: 400;
   padding: 15px;
   margin-top: 15px;
   font-size: 20px;
