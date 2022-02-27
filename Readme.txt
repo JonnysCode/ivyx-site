@@ -1,1 +1,1 @@
-This is website for Tempire (name pending)
+www.ivyx.earth
