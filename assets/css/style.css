@@ -521,7 +521,7 @@ section {
 }
 .services .icon-box {
   height: 300px;
-  padding: 60px 30px;
+  padding: 60px 60px;
   position: relative;
   overflow: hidden;
   background-color: #fff;
@@ -1634,6 +1634,9 @@ section {
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact a img{
+  width: 160px;
 }
 #footer .footer-top .footer-contact h4 {
   font-size: 22px;
